@@ -118,7 +118,9 @@
 					<ul class="collapse" id="component-nav">
 
 						<li class=""><a href="button.html"><i
-								class="icon-angle-right"></i> Members </a></li>
+								class="icon-angle-right"></i> MORE Members </a></li>
+								<li class=""><a href="button.html"><i
+								class="icon-angle-right"></i> MORE Permission </a></li>
 						<li class=""><a href="icon.html" ><i
 								class="icon-angle-right"></i> MDM Permission </a></li>
 						<li class=""><a href="progress.html"><i
