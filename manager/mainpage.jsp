@@ -40,7 +40,7 @@
 }
 
 .inner {
-	background:#757575;
+	background:#8f8f8f;
 	color:#fff;
 }
 
@@ -115,7 +115,7 @@
 							<i class="icon-angle-left"></i>
 					</span> 
 				</a>
-					<ul class="collapse" id="component-nav">
+					<ul class="collapse" id="component-nav" style="background-color:#666666;">
 
 						<li class=""><a href="button.html"><i
 								class="icon-angle-right"></i> MORE Members </a></li>
@@ -134,7 +134,7 @@
 							class="icon-angle-left"></i>
 					</span> 
 				</a>
-					<ul class="collapse" id="form-nav">
+					<ul class="collapse" id="form-nav" style="background-color:#666666;">
 						<li class=""><a href="forms_advance.html"><i
 								class="icon-angle-right"></i> User Logs </a></li>
 					</ul></li>
@@ -147,7 +147,7 @@
 							<i class="icon-angle-left"></i>
 					</span>
 				</a>
-					<ul class="collapse" id="chart-nav">
+					<ul class="collapse" id="chart-nav" style="background-color:#666666;">
 
 
 
@@ -165,7 +165,7 @@
 						Menu <span class="pull-right"> <i class="icon-angle-left"></i>
 					</span>
 				</a>
-					<ul class="collapse" id="DDL-nav">
+					<ul class="collapse" id="DDL-nav" style="background-color:#666666;">
 						<li><a href="#" data-parent="#DDL-nav" data-toggle="collapse"
 							class="accordion-toggle" data-target="#DDL1-nav"> <i
 								class="icon-sitemap"></i>&nbsp; Demo Link 1 <span
@@ -175,7 +175,7 @@
 
 
 						</a>
-							<ul class="collapse" id="DDL1-nav">
+							<ul class="collapse" id="DDL1-nav" style="background-color:#666666;">
 								<li><a href="#"><i class="icon-angle-right"></i> Demo
 										Link 1 </a></li>
 								<li><a href="#"><i class="icon-angle-right"></i> Demo
@@ -198,7 +198,7 @@
 							class="icon-angle-left"></i>
 					</span>
 				</a>
-					<ul class="collapse" id="DDL4-nav">
+					<ul class="collapse" id="DDL4-nav" style="background-color:#666666;">
 						<li><a href="#" data-parent="DDL4-nav" data-toggle="collapse"
 							class="accordion-toggle" data-target="#DDL4_1-nav"> <i
 								class="icon-sitemap"></i>&nbsp; Demo Link 1 <span
@@ -208,7 +208,7 @@
 
 
 						</a>
-							<ul class="collapse" id="DDL4_1-nav">
+							<ul class="collapse" id="DDL4_1-nav" style="background-color:#666666;">
 								<li><a href="#" data-parent="#DDL4_1-nav"
 									data-toggle="collapse" class="accordion-toggle"
 									data-target="#DDL4_2-nav"> <i class="icon-sitemap"></i>&nbsp;
@@ -216,7 +216,7 @@
 										style="margin-right: 20px;"> <i class="icon-angle-left"></i>
 									</span>
 								</a>
-									<ul class="collapse" id="DDL4_2-nav">
+									<ul class="collapse" id="DDL4_2-nav" style="background-color:#666666;">
 
 
 
@@ -244,7 +244,7 @@
 							class="icon-angle-left"></i>
 					</span> 
 				</a>
-					<ul class="collapse" id="error-nav">
+					<ul class="collapse" id="error-nav" style="background-color:#666666;">
 						<li><a href="errors_403.html"><i class="icon-angle-right"></i>
 								Error 403 </a></li>
 						<li><a href="errors_404.html"><i class="icon-angle-right"></i>
