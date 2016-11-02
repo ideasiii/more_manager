@@ -54,7 +54,7 @@
 <body class="padTop53 ">
 
 	<!-- MAIN WRAPPER -->
-	<div id="wrap" style="background: #454545;">
+	<div id="wrap" style="background: #454545;padding:0;">
 
 
 		<!-- HEADER SECTION -->
@@ -79,89 +79,11 @@
 				<!-- END LOGO SECTION -->
 				<ul class="nav navbar-top-links navbar-right">
 
-					<!--TASK SECTION -->
-					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#"> <span
-							class="label label-danger">5</span> <i class="icon-tasks"></i>&nbsp;
-							<i class="icon-chevron-down"></i>
-					</a>
-
-						<ul class="dropdown-menu dropdown-tasks">
-							<li><a href="#">
-									<div>
-										<p>
-											<strong> Profile </strong> <span
-												class="pull-right text-muted">40% Complete</span>
-										</p>
-										<div class="progress progress-striped active">
-											<div class="progress-bar progress-bar-success"
-												role="progressbar" aria-valuenow="40" aria-valuemin="0"
-												aria-valuemax="100" style="width: 40%">
-												<span class="sr-only">40% Complete (success)</span>
-											</div>
-										</div>
-									</div>
-							</a></li>
-							<li class="divider"></li>
-							<li><a href="#">
-									<div>
-										<p>
-											<strong> Pending Tasks </strong> <span
-												class="pull-right text-muted">20% Complete</span>
-										</p>
-										<div class="progress progress-striped active">
-											<div class="progress-bar progress-bar-info"
-												role="progressbar" aria-valuenow="20" aria-valuemin="0"
-												aria-valuemax="100" style="width: 20%">
-												<span class="sr-only">20% Complete</span>
-											</div>
-										</div>
-									</div>
-							</a></li>
-							<li class="divider"></li>
-							<li><a href="#">
-									<div>
-										<p>
-											<strong> Work Completed </strong> <span
-												class="pull-right text-muted">60% Complete</span>
-										</p>
-										<div class="progress progress-striped active">
-											<div class="progress-bar progress-bar-warning"
-												role="progressbar" aria-valuenow="60" aria-valuemin="0"
-												aria-valuemax="100" style="width: 60%">
-												<span class="sr-only">60% Complete (warning)</span>
-											</div>
-										</div>
-									</div>
-							</a></li>
-							<li class="divider"></li>
-							<li><a href="#">
-									<div>
-										<p>
-											<strong> Summary </strong> <span
-												class="pull-right text-muted">80% Complete</span>
-										</p>
-										<div class="progress progress-striped active">
-											<div class="progress-bar progress-bar-danger"
-												role="progressbar" aria-valuenow="80" aria-valuemin="0"
-												aria-valuemax="100" style="width: 80%">
-												<span class="sr-only">80% Complete (danger)</span>
-											</div>
-										</div>
-									</div>
-							</a></li>
-							<li class="divider"></li>
-							<li><a class="text-center" href="#"> <strong>See
-										All Tasks</strong> <i class="icon-angle-right"></i>
-							</a></li>
-						</ul></li>
-					<!--END TASK SECTION -->
 
 					<!--ADMIN SETTINGS SECTIONS -->
 
-					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#"> <i class="icon-user "></i>&nbsp;
-							<i class="icon-chevron-down "></i>
+					<li class="dropdown"><a class="dropdown-toggle" style="background-color:transparent;"
+						data-toggle="dropdown" href="#"> <i class="icon-gear fa-lg fa-inverse"></i>
 					</a>
 
 						<ul class="dropdown-menu dropdown-user">
@@ -189,93 +111,50 @@
 				<li class="panel "><a href="#" data-parent="#menu"
 					data-toggle="collapse" class="accordion-toggle"
 					style="color: white;" data-target="#component-nav"> <i
-						class="icon-tasks"> </i> UI Elements <span class="pull-right">
+						class="icon-user"> </i> User Permission <span class="pull-right">
 							<i class="icon-angle-left"></i>
-					</span> &nbsp; <span class="label label-default">10</span>&nbsp;
+					</span> 
 				</a>
 					<ul class="collapse" id="component-nav">
 
 						<li class=""><a href="button.html"><i
-								class="icon-angle-right"></i> Buttons </a></li>
+								class="icon-angle-right"></i> Members </a></li>
 						<li class=""><a href="icon.html" ><i
-								class="icon-angle-right"></i> Icons </a></li>
+								class="icon-angle-right"></i> MDM Permission </a></li>
 						<li class=""><a href="progress.html"><i
-								class="icon-angle-right"></i> Progress </a></li>
-						<li class=""><a href="tabs_panels.html"><i
-								class="icon-angle-right"></i> Tabs & Panels </a></li>
-						<li class=""><a href="notifications.html"><i
-								class="icon-angle-right"></i> Notification </a></li>
-						<li class=""><a href="more_notifications.html"><i
-								class="icon-angle-right"></i> More Notification </a></li>
-						<li class=""><a href="modals.html"><i
-								class="icon-angle-right"></i> Modals </a></li>
-						<li class=""><a href="wizard.html"><i
-								class="icon-angle-right"></i> Wizard </a></li>
-						<li class=""><a href="sliders.html"><i
-								class="icon-angle-right"></i> Sliders </a></li>
-						<li class=""><a href="typography.html"><i
-								class="icon-angle-right"></i> Typography </a></li>
+								class="icon-angle-right"></i> Dashboard Permission </a></li>
+						
 					</ul></li>
 				<li class="panel "><a href="#" data-parent="#menu"
 					data-toggle="collapse" class="accordion-toggle collapsed"
 					 data-target="#form-nav"> <i
-						class="icon-pencil"></i> Forms <span class="pull-right"> <i
+						class="icon-tasks"></i> Log Data <span class="pull-right"> <i
 							class="icon-angle-left"></i>
-					</span> &nbsp; <span class="label label-success">5</span>&nbsp;
+					</span> 
 				</a>
 					<ul class="collapse" id="form-nav">
-						<li class=""><a href="forms_general.html"><i
-								class="icon-angle-right"></i> General </a></li>
 						<li class=""><a href="forms_advance.html"><i
-								class="icon-angle-right"></i> Advance </a></li>
-						<li class=""><a href="forms_validation.html"><i
-								class="icon-angle-right"></i> Validation </a></li>
-						<li class=""><a href="forms_fileupload.html"><i
-								class="icon-angle-right"></i> FileUpload </a></li>
-						<li class=""><a href="forms_editors.html"><i
-								class="icon-angle-right"></i> WYSIWYG / Editor </a></li>
+								class="icon-angle-right"></i> User Logs </a></li>
 					</ul></li>
 
-				<li class="panel"><a href="#" data-parent="#menu"
-					data-toggle="collapse" class="accordion-toggle"
-					 data-target="#pagesr-nav"> <i
-						class="icon-table"></i> Pages <span class="pull-right"> <i
-							class="icon-angle-left"></i>
-					</span> &nbsp; <span class="label label-info">6</span>&nbsp;
-				</a>
-					<ul class="collapse" id="pagesr-nav">
-						<li><a href="pages_calendar.html"><i
-								class="icon-angle-right"></i> Calendar </a></li>
-						<li><a href="pages_timeline.html"><i
-								class="icon-angle-right"></i> Timeline </a></li>
-						<li><a href="pages_social.html"><i
-								class="icon-angle-right"></i> Social </a></li>
-						<li><a href="pages_pricing.html"><i
-								class="icon-angle-right"></i> Pricing </a></li>
-						<li><a href="pages_offline.html"><i
-								class="icon-angle-right"></i> Offline </a></li>
-						<li><a href="pages_uc.html"><i class="icon-angle-right"></i>
-								Under Construction </a></li>
-					</ul></li>
+				
 				<li class="panel"><a href="#" data-parent="#menu"
 					data-toggle="collapse" class="accordion-toggle"
 					 data-target="#chart-nav"> <i
-						class="icon-bar-chart"></i> Charts <span class="pull-right">
+						class="icon-bar-chart"></i> Dashboard <span class="pull-right">
 							<i class="icon-angle-left"></i>
-					</span> &nbsp; <span class="label label-danger">4</span>&nbsp;
+					</span>
 				</a>
 					<ul class="collapse" id="chart-nav">
 
 
 
 						<li><a href="charts_line.html"><i
-								class="icon-angle-right"></i> Line Charts </a></li>
+								class="icon-angle-right"></i> User Behavior Analysis </a></li>
 						<li><a href="charts_bar.html"><i class="icon-angle-right"></i>
-								Bar Charts</a></li>
-						<li><a href="charts_pie.html"><i class="icon-angle-right"></i>
-								Pie Charts </a></li>
+								Consumption Data Analysis</a></li>
 						<li><a href="charts_other.html"><i
-								class="icon-angle-right"></i> other Charts </a></li>
+								class="icon-angle-right"></i> Else Analysis </a></li>
 					</ul></li>
 
 				<li class="panel"><a href="#" data-parent="#menu"
@@ -361,7 +240,7 @@
 					data-target="#error-nav"> <i class="icon-warning-sign"></i>
 						Error Pages <span class="pull-right"> <i
 							class="icon-angle-left"></i>
-					</span> &nbsp; <span class="label label-warning">5</span>&nbsp;
+					</span> 
 				</a>
 					<ul class="collapse" id="error-nav">
 						<li><a href="errors_403.html"><i class="icon-angle-right"></i>
@@ -375,30 +254,14 @@
 						<li><a href="errors_503.html"><i class="icon-angle-right"></i>
 								Error 503 </a></li>
 					</ul></li>
-
-
-				<li><a href="gallery.html"><i class="icon-film"></i> Image
-						Gallery </a></li>
+					
+				
 				<li><a href="tables.html"><i class="icon-table"></i> Data
 						Tables </a></li>
 				<li><a href="maps.html"><i class="icon-map-marker"></i>
 						Maps </a></li>
-
-				<li><a href="grid.html"><i class="icon-columns"></i> Grid </a></li>
-				<li class="panel"><a href="#" data-parent="#menu"
-					data-toggle="collapse" class="accordion-toggle"
-					data-target="#blank-nav"> <i class="icon-check-empty"></i>
-						Blank Pages <span class="pull-right"> <i
-							class="icon-angle-left"></i>
-					</span> &nbsp; <span class="label label-success">2</span>&nbsp;
-				</a>
-					<ul class="collapse" id="blank-nav">
-
-						<li><a href="blank.html"><i class="icon-angle-right"></i>
-								Blank Page One </a></li>
-						<li><a href="blank2.html"><i class="icon-angle-right"></i>
-								Blank Page Two </a></li>
-					</ul></li>
+				
+			
 				<li><a href="login.html"><i class="icon-signin"></i> Login
 						Page </a></li>
 
