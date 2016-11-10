@@ -33,18 +33,15 @@
 
 
 <style>
-
-#menu li > a {
-	border:0;
+#menu li>a {
+	border: 0;
 	color: white;
 }
 
 .inner {
-	background:#8f8f8f;
-	color:#fff;
+	background: #8f8f8f;
+	color: #fff;
 }
-
-
 </style>
 </head>
 
@@ -54,7 +51,7 @@
 <body class="padTop53 ">
 
 	<!-- MAIN WRAPPER -->
-	<div id="wrap" style="background: #454545;padding:0;">
+	<div id="wrap" style="background: #454545; padding: 0;">
 
 
 		<!-- HEADER & MENU SECTION -->
@@ -62,12 +59,12 @@
 
 
 		<!--PAGE CONTENT -->
-		<div id="content" style="float:left;width:calc(100% - 220px);">
+		<div id="content" style="float: left; width: calc(100% - 220px);">
 
 			<div class="inner" style="min-height: 1200px;">
 				<div class="row">
 					<div class="col-lg-12">
-						<h1>Admin Dashboard</h1>
+						<h1>User Logs</h1>
 					</div>
 				</div>
 				<hr />
