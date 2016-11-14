@@ -56,7 +56,7 @@
 		var form = document.getElementById(formName);
 		form.submit();
 	}
-	</script>
+</script>
 
 <style>
 #menu li>a {
@@ -96,7 +96,7 @@
 				<hr />
 
 				<div class="form-inline"
-					style="height: 80px; background-color: #303030; border-radius: 5px; text-align: center;padding:5px;">
+					style="height: 95px; background-color: #303030; border-radius: 5px; text-align: center; padding: 5px;">
 
 					<form action="userlogs_result.jsp" role="form"
 						name="formQueryUserLogs" id="formQueryUserLogs">
@@ -104,23 +104,31 @@
 						<div class="form-group">
 							<div class="col-lg-3 form-inline">
 								<label class="col-lg-4" for="dp3">Start Date</label> <input
-									type="text" class="form-control" data-date-format="yyyy-mm-dd" id="dp3" />
+									type="text" class="form-control" data-date-format="yyyy-mm-dd"
+									id="dp3" />
 							</div>
 						</div>
 
-						<div class="form-group" style="margin-left:100px;">
+						<div class="form-group" style="margin-left: 100px;">
 							<div class="col-lg-3 form-inline">
 								<label class="col-lg-4" for="dp4">End Date</label> <input
-									type="text" class="form-control" data-date-format="yyyy-mm-dd" id="dp4" />
+									type="text" class="form-control" data-date-format="yyyy-mm-dd"
+									id="dp4" />
 							</div>
 						</div>
 
 					</form>
-
-
+					<button type="button" class="btn btn-primary btn-circle btn-xl">
+						<i class="icon-search"></i>
+					</button>
 				</div>
 
-
+				<div class="box" style="padding: 20px;margin-top:50px;border-radius:5px;background-color:#fff;">
+				
+				
+				
+				
+				</div>
 
 
 			</div>
@@ -138,7 +146,7 @@
 	<!-- END GLOBAL SCRIPTS -->
 
 	<!-- PAGE LEVEL SCRIPTS -->
-<script src="/assets/js/jquery-ui.min.js"></script>
+	<script src="/assets/js/jquery-ui.min.js"></script>
 	<script src="/assets/plugins/uniform/jquery.uniform.min.js"></script>
 	<script
 		src="/assets/plugins/inputlimiter/jquery.inputlimiter.1.3.1.min.js"></script>
