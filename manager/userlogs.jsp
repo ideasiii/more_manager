@@ -1,6 +1,41 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="com.mongodb.MongoClient"%>
+<%@ page import="com.mongodb.DB"%>
+<%@ page import="com.mongodb.DBCollection"%>
+<%@ page import="com.mongodb.BasicDBObject"%>
+<%@ page import="com.mongodb.DBObject"%>
+<%@ page import="com.mongodb.DBCursor"%>
+<%@ page import="com.mongodb.BasicDBList"%>
+<%@ page import="java.util.ArrayList"%>
+<%@ page import="java.util.regex.Pattern"%>
+<%@ page import="org.json.JSONObject"%>
+<%@ page import="org.json.JSONArray"%>
+<%@ page import="java.util.Date"%>
+<%@ page import="java.text.SimpleDateFormat"%>
+<%@ page import="backstage.MoreManager"%>	
 
+<%
+request.setCharacterEncoding("UTF-8");
+
+
+SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+Date current = new Date();
+
+ String strSD = request.getParameter(MoreManager.Common.START_DATE);
+ String strED = request.getParameter(MoreManager.Common.END_DATE);
+ 
+ if (null == strSD || (null != strSD && 0 >= strSD.length()))
+ {
+     strSD = dateFormat.format(current);
+ }
+ 
+ if (null == strED || (null != strED && 0 >= strED.length()))
+ {
+     strED = dateFormat.format(current);
+ }
+
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,6 +102,11 @@
 		parts = form.end_date.value.split('-');
 		var ed = new Date(parts[0],parts[1]-1,parts[2]);	
 		
+		if (Trim(form.end_date.value) != '') {
+			if (!reDate.test(form.end_date.value))
+				errMsg += "Wrong date format !!\n";
+		}
+		
 		if (Trim(form.start_date.value) != '') {
 			if (!reDate.test(form.start_date.value))
 				errMsg += "Wrong date format !!\n";
@@ -110,6 +150,7 @@ padding: 5px;
 padding: 20px;
 margin-top:50px;
 border-radius:5px;
+color:#000;
 background-color:#fff;
 }
 
@@ -142,21 +183,21 @@ background-color:#fff;
 
 				<div class="form-inline option-box">
 
-					<form action="userlogs_result.jsp" role="form"
+					<form action="userlogs.jsp" role="form"
 						name="formQueryUserLogs" id="formQueryUserLogs">
 
 						<div class="form-group">
 							<div class="col-lg-3 form-inline">
-								<label class="col-lg-4" for="dp3">Start Date</label> <input
-									type="text" class="form-control" data-date-format="yyyy-mm-dd"
+								<label class="col-lg-4" for="dp3">Start Date</label> <input name="<%=MoreManager.Common.START_DATE%>"
+									type="text" class="form-control" data-date-format="yyyy-mm-dd" value="<%=strSD%>"
 									id="dp3" />
 							</div>
 						</div>
 
 						<div class="form-group" style="margin-left: 100px;">
 							<div class="col-lg-3 form-inline">
-								<label class="col-lg-4" for="dp4">End Date</label> <input
-									type="text" class="form-control" data-date-format="yyyy-mm-dd"
+								<label class="col-lg-4" for="dp4">End Date</label> <input name="<%=MoreManager.Common.END_DATE%>" 
+									type="text" class="form-control" data-date-format="yyyy-mm-dd" value="<%=strED%>"
 									id="dp4" />
 							</div>
 						</div>
@@ -170,10 +211,32 @@ background-color:#fff;
 				</div>
 
 				<div class="box white-box" >
-				
-				
-				
-				
+				<%
+								MongoClient mongoClient = new MongoClient();
+								DB db = mongoClient.getDB("website");
+								if (null != db) {
+									DBCollection collection = db.getCollection("more");
+
+									{
+										BasicDBObject dataQuery = new BasicDBObject();
+										dataQuery.put("create_date",
+												new BasicDBObject("$gte", strSD).append("$lte", strED + " 23:59:59"));
+										out.println(strSD+strED);
+							
+										DBCursor cursor = collection.find(dataQuery);
+										while (cursor.hasNext()) {
+											JSONObject jsonobj = new JSONObject(cursor.next().toString());
+											jsonobj.remove("_id");
+							%>
+
+							<p><%=jsonobj.toString()%></p>
+
+							<%
+								}
+									}
+								}
+								mongoClient.close();
+							%>
 				</div>
 
 

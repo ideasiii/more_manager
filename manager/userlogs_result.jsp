@@ -1,6 +1,41 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="com.mongodb.MongoClient"%>
+<%@ page import="com.mongodb.DB"%>
+<%@ page import="com.mongodb.DBCollection"%>
+<%@ page import="com.mongodb.BasicDBObject"%>
+<%@ page import="com.mongodb.DBObject"%>
+<%@ page import="com.mongodb.DBCursor"%>
+<%@ page import="com.mongodb.BasicDBList"%>
+<%@ page import="java.util.ArrayList"%>
+<%@ page import="java.util.regex.Pattern"%>
+<%@ page import="org.json.JSONObject"%>
+<%@ page import="org.json.JSONArray"%>
+<%@ page import="java.util.Date"%>
+<%@ page import="java.text.SimpleDateFormat"%>
+<%@ page import="backstage.MoreManager"%>	
 
+<%
+request.setCharacterEncoding("UTF-8");
+
+
+SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+Date current = new Date();
+
+ String strSD = request.getParameter(MoreManager.Common.START_DATE);
+ String strED = request.getParameter(MoreManager.Common.END_DATE);
+ 
+ if (null == strSD || (null != strSD && 0 >= strSD.length()))
+ {
+     strSD = dateFormat.format(current);
+ }
+ 
+ if (null == strED || (null != strED && 0 >= strED.length()))
+ {
+     strED = dateFormat.format(current);
+ }
+
+%>
 <!DOCTYPE html>
 <html>
 <head>
