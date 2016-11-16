@@ -77,7 +77,7 @@
 				</a>
 					<ul class="collapse" id="form-nav" style="background-color:#666666;">
 						<li class=""><a href="userlogs.jsp"><i
-								class="icon-angle-right"></i> User Logs </a></li>
+								class="icon-angle-right"></i> MORE User Logs </a></li>
 					</ul></li>
 
 				
