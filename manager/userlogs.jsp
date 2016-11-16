@@ -245,7 +245,8 @@
 											//out.println(strSD + strED);
 
 											DBCursor cursor = collection.find(dataQuery);
-
+											cursor.sort(new BasicDBObject("create_date",1));
+											
 											while (cursor.hasNext()) {
 												JSONObject jsonobj = new JSONObject(cursor.next().toString());
 												jsonobj.remove("_id");
